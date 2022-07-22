@@ -1,0 +1,40 @@
+<div class="addPage card">
+    <div class="container card-body">
+        <div class="row">
+            <div class="col-sm-10"></div>
+            <div class="col-sm-2">
+                <button (click)="navigateToAdd('addDetails', 'add')" type="button"
+                    class="btn btn-default addBtn">+</button>
+            </div>
+        </div>
+        <div class="row addTitle">
+            <span class="titleSpan">
+                <h2 class="titleCnt"><b>{{pageTitle}}</b></h2>
+                <h6 class="subTitleCnt">{{subTitle}} </h6>
+            </span>
+        </div>
+        <hr>
+        <div class="row teamForm">
+            <div class="list-group" style="width: 96%;">
+                <a (click)="navigateToEdit('editDetails', i)" *ngFor="let item of teamList; let i = index"
+                    class="list-group-item list-group-item-action">
+                    <div class="row">
+                        <div class="col-sm-3 usrRow">
+                            <i class="fa fa-user fa-2xl usrIcon" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-sm-1"></div>
+                        <div class="col-sm-8 infoRow">
+                            <div class="row">
+                                <h5 class="titleCnt">{{item.firstName | titlecase}}&nbsp;{{item.lastName | titlecase}}&nbsp;&nbsp;<b
+                                        *ngIf="roleFlag[i]">(admin)</b></h5>
+                            </div>
+                            <div class="row">
+                                <h5 class="subTitleCnt">{{item.email}}</h5>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

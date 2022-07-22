@@ -1,0 +1,76 @@
+<div class="addPage card">
+    <div class="container card-body">
+        <div class="row addTitle">
+            <span class="titleSpan">
+                <h2 class="titleCnt"><b>{{pageTitle}}</b></h2>
+                <h6 class="subTitleCnt">{{subtTitle}} </h6>
+            </span>
+        </div>
+        <hr>
+        <div class="row teamForm">
+            <div clss="row" style="width: 100%;margin-bottom: 1%;">
+                <h2 class="titleCnt"><b>{{infoTitle}}</b></h2>
+            </div>
+            <div class="row formSpan">
+                <form>
+                    <div class="form-group">
+                        <input type="text" [(ngModel)]="selectedTeamMember.firstName" class="form-control" size="100" id="firstName" placeholder="First Name"
+                            name="firstName">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" [(ngModel)]="selectedTeamMember.lastName" class="form-control" size="100" id="lastName" placeholder="Last Name"
+                            name="lastName">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" [(ngModel)]="selectedTeamMember.email" class="form-control" size="100" id="usrEmail" placeholder="Email Id"
+                            name="usrEmail">
+                    </div>
+                    <div class="form-group teamRole">
+                        <div clss="row" style="width: 100%;margin-bottom: 1%;">
+                            <h2 class="titleCnt"><b>{{roleTitle}}</b></h2>
+                        </div>
+                        <div class="radio rdoGrp" *ngIf="roleFlag">
+                            <label><input type="radio" [(ngModel)]="selectedTeamMember.role" name="optradio" disabled value="regular">&nbsp;&nbsp;Regular - Can't delete
+                                members</label>{{selectedTeamMember.role}}
+                        </div>
+                        <div class="radio disabled rdoGrp" *ngIf="roleFlag">
+                            <label><input type="radio" [(ngModel)]="selectedTeamMember.role" name="optradio" disabled value="admin">&nbsp;&nbsp;Admin - Can delete
+                                members</label>
+                        </div>
+                        <div class="radio rdoGrp" *ngIf="!roleFlag">
+                            <label><input type="radio" [(ngModel)]="selectedTeamMember.role" name="optradio" value="regular">&nbsp;&nbsp;Regular - Can't delete
+                                members</label>
+                        </div>
+                        <div class="radio disabled rdoGrp" *ngIf="!roleFlag">
+                            <label><input type="radio" [(ngModel)]="selectedTeamMember.role" name="optradio" value="admin">&nbsp;&nbsp;Admin - Can delete
+                                members</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4" *ngIf="roleFlag">
+                            <button  disabled type="submit" (click)="navigateToList('ListDetails', 'delete')"
+                                class="btn btn-default delBtn">Delete</button>
+                        </div>
+                        <div class="col-sm-4" *ngIf="!roleFlag">
+                            <button type="submit" (click)="navigateToList('ListDetails', 'delete')"
+                                class="btn btn-default delBtn">Delete</button>
+                        </div>
+                        <div class="col-sm-4"></div>
+                        <div class="col-sm-4" *ngIf="roleFlag">
+                            <button type="submit" disabled (click)="navigateToList('ListDetails', 'edit')"
+                            class="btn btn-primary saveBtn">Save</button>
+                        </div>
+                        <div class="col-sm-4" *ngIf="!roleFlag">
+                            <button type="submit" (click)="navigateToList('ListDetails',  'edit')"
+                            class="btn btn-primary saveBtn">Save</button>
+                        </div>
+                        <h6 style="color:red; font-family: sans-serif;" *ngIf="errorFlag">{{errorMsg}}</h6>    
+                        <h6 style="color:red; font-family: sans-serif; margin-top: 1%;" *ngIf="roleFlag">Can't edit an admin profile!!</h6>    
+                    </div>
+                    
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>

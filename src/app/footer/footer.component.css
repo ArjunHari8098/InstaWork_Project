@@ -1,0 +1,219 @@
+.titleSpan{
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.logo{
+    color: white;
+}
+.footPad{
+    padding-bottom: 1%;
+    /* border-radius: 1rem; */
+    border-top: .5px solid rgb(231, 231, 231);
+    padding: 2%;
+    margin-top: 8px;
+}
+.footSctn{
+    background-color: rgb(231, 231, 231);;
+}
+.page-heading h1 {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-family: 'Spectral', serif;
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+}
+.page-heading p {
+    color: #fff;
+    font-size: large;   
+    font-weight: 600;
+    font-size: 14px;
+    padding: 0px 25%;
+    margin-bottom: 0px;
+}
+.main-content {
+    padding-bottom: 0;
+}
+.revealator-delay1.revealator-below, .revealator-delay1.revealator-partially-below {
+    transition-delay: 0s!important;
+}
+.revealator-slideup.revealator-above, .revealator-slideup.revealator-partially-below, .revealator-slideup.revealator-within {
+    transform: translate(0,0);
+    opacity: 1;
+}
+.no-transform {
+    transform: none !important;
+}
+.revealator-fade, .revealator-rotateleft, .revealator-rotateright, .revealator-slidedown, .revealator-slideleft, .revealator-slideright, .revealator-slideup, .revealator-zoomin, .revealator-zoomout {
+    transition: all .6s;
+}
+.custom-title {
+    /* padding-bottom: 22px; */
+    font-size: 26px;
+}
+.ft-wt-600 {
+    font-weight: 600;
+}
+.open-sans-font {
+    font-family: 'Open Sans', sans-serif;
+}
+.custom-span-contact {
+    font-weight: 600;
+    padding-left: 50px;
+    line-height: 21px;
+    padding-top: 5px;
+}
+.custom-span-contact i {
+    left: 0;
+    top: 10px;
+    font-size: 33px;
+}
+.custom-span-contact i {
+    color: #f2745f;
+}
+.custom-span-contact span {
+    text-transform: uppercase;
+    opacity: .8;
+    font-weight: 400;
+}
+.custom-span-contact {
+    font-weight: 500;
+    padding-left: 50px;
+    line-height: 21px;
+    padding-top: 5px;
+}
+.social {
+    margin-left: -5px;
+    height: 1px;
+}
+ul.social li {
+    display: inline-block;
+}
+.d-block{
+    font-weight: 500;
+}
+.socialLink{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    line-height: 42px;
+    text-align: center;
+    color: #fff;
+    transition: .3s;
+    font-size: 17px;
+    margin: 0 6px;
+    background: #666;
+    border-radius: 50%;
+}
+.socialLink:hover{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    line-height: 42px;
+    text-align: center;
+    color: #fff;
+    transition: .3s;
+    font-size: 17px;
+    margin: 0 6px;
+    background: #f2745f;
+    border-radius: 50%;
+}
+.inpTxtbx{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    color: #666;
+    width: 100%;
+    padding: 11px 26px;
+    margin-bottom: 30px;
+    border-radius: 30px;
+    outline: none !important;
+    transition: .3s;
+    overflow: visible;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+.but{
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    background-color: #f2745f;
+    box-shadow: none !important;
+    border-radius: 26px;
+    font-weight: 500;
+    height: 46px;
+    line-height: 46px;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 0 40px;
+    outline: none !important;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: .5px;
+    border: 0;
+}
+.txtAreaInp{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    color: #666;
+    width: 100%;
+    padding: 12px 26px;
+    margin-bottom: 20px;
+    height: 160px;
+    overflow: hidden;
+    border-radius: 30px;
+    outline: none !important;
+    transition: .3s;
+}
+.errorMsg{
+    color: red;
+    font-size: small;
+    font-family: 'Poppins', sans-serif;
+}
+.form-message {
+    margin: 24px 0;
+}
+.output_message {
+    display: block;
+    color: #fff;
+    height: 46px;
+    line-height: 46px;
+    border-radius: 30px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f2745f;
+}
+.tcikIcon{
+    background-color: #fff;
+    color: #666;
+    margin-right: 1%;
+}
+.titleImg{
+    vertical-align: middle;
+    border-style: none;
+    width: 65%;
+    height: auto;
+    box-shadow: 10px 10px 8px #d8deed;
+}
+.fillerImg{
+ margin-top: 5%;   
+}
+section.map #map {
+    height: 450px;
+    
+}
+section.map {
+    margin-bottom: 150px;
+}
+@media (max-width: 768px){
+    .footPad{
+        font-size: smaller;
+    }
+    .footPad h6{
+        font-size: smaller;
+        margin-left: 4%;
+    }
+}
+    

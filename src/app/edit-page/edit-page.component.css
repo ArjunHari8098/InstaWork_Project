@@ -1,0 +1,50 @@
+.card-body{
+    background-color: white;
+    border-radius: 1rem;
+    border: 1px solid rgb(171, 171, 171);
+}
+.card{
+    background-color: #ebebebf5;
+    padding: 1%;
+}
+.titleSpan{
+    margin-left: 1%;
+}
+.formSpan{
+    margin-left: 1%;
+    margin-bottom: 2%;
+}
+.teamForm{
+    margin-left: 1%;
+}
+.form-group{
+    margin-bottom: 3%;
+}
+.rdoGrp{
+    margin-bottom: 2%;
+    border-bottom: 1px solid rgba(171, 171, 171, 0.21);
+}
+.saveBtn{
+    margin-left: 78%;
+}
+.delBtn{
+    color: red;
+    border: 1px solid rgba(171, 171, 171, 0.21);;
+}
+.titleCnt{
+    font-size: larger;  
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(79, 79, 79);
+    
+}
+.titleCnt{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: larger;
+}
+.subTitleCnt{
+    color: rgb(220, 220, 220);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}

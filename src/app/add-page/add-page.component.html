@@ -1,0 +1,50 @@
+<div class="addPage card">
+    <div class="container card-body">
+        <div class="row addTitle">
+            <span class="titleSpan">
+                <h2 class="titleCnt"><b>{{pageTitle}}</b></h2>
+                <h6 class="subTitleCnt">{{subtTitle}} </h6>
+            </span>
+        </div>
+        <hr>
+        <div class="row teamForm">
+            <div clss="row" style="width: 100%;margin-bottom: 1%;">
+                <h2 class="titleCnt"><b>{{infoTitle}}</b></h2>
+            </div>
+            <div class="row formSpan">
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" [(ngModel)]="teamMember.firstName" size="100" id="firstName" placeholder="First Name"
+                            name="firstName">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" [(ngModel)]="teamMember.lastName" size="100" id="lastName" placeholder="Last Name"
+                            name="lastName">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" [(ngModel)]="teamMember.email" size="100" id="usrEmail" placeholder="Email Id"
+                            name="usrEmail">
+                    </div>
+                    <div class="form-group teamRole">
+                        <div clss="row" style="width: 100%;margin-bottom: 1%;">
+                            <h2 class="titleCnt"><b>{{roleTitle}}</b></h2>
+                        </div>
+                        <div class="radio rdoGrp">
+                            <label><input type="radio" checked="checked" name="optradio" [(ngModel)]="teamMember.role" value="regular">&nbsp;&nbsp;Regular - Can't delete
+                                members</label>
+                        </div>
+                        <div class="radio disabled rdoGrp">
+                            <label><input type="radio" name="optradio" [(ngModel)]="teamMember.role" value="admin">&nbsp;&nbsp;Admin - Can delete
+                                members</label>
+                        </div>
+                    </div>
+                    <button type="submit" (click)="navigateToList('ListDetails')"
+                        class="btn btn-primary saveBtn">Save</button>
+                    <h6 style="color:red; font-family: sans-serif;" *ngIf="errorFlag">{{errorMsg}}</h6>    
+                    <h6 style="color:red; font-family: sans-serif;" *ngIf="validationFlag">{{validationMsg}}</h6>    
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
